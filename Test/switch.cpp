@@ -11,7 +11,7 @@ int main(){
     switch (opt)
     {
     case 'a':
-        cout<< "You are enter option 1";\
+        cout<< "You are enter option 1";
 
         
 

@@ -1,5 +1,20 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> //for set space  || for example: Id        Name                  salary          tax
+                                    //              1           Seang                   500         0.5
+    //we use it for do like example
+    //And we use for loop
+    //   cout<<left;
+    // cout<<setw(8)<<"id"
+    //     <<setw(20)<<"Name"
+    //     <<setw(10)<<"Salary"
+    //     <<setw(10)<<"Tax"<<endl;
+
+    //And this one we use for loop too 
+    //cout<<left;
+    // cout<<setw(8)<<id[i]
+    //     <<setw(20)<<name[i]
+    //     <<setw(10)<<salary[i]
+    //     <<setw(10)<<tax[i]<<endl;
 using namespace std;
 int main(){
     int id[10], count;
