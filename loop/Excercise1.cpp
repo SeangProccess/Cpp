@@ -1,7 +1,8 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main(){
-    int sum=0;
+    float sum=0;
     int number;
     int count;
     float average;
@@ -20,7 +21,7 @@ int main(){
     }
     cout<<"Mer latphorl klun eng tv yii                  :"<<sum<<endl;
     average = sum /count;
-    cout<<"Ot jes tver klun eng teh men lv smer pin ng   :"<<average;
+    cout<<"Ot jes tver klun eng teh men lv smer pin ng   :"<<setprecision(2)<<average;
 
 
 }
