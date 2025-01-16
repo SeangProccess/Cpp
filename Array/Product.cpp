@@ -2,9 +2,9 @@
 #include <iomanip>
 using namespace std;
 int main(){
-    int qty[10],discount[10],count,code[15];
+    int qty[10],count,code[15];
     string name[20];
-    float price[20], total[20], payment[10];
+    float price[20],discount[10], total[20], payment[10];
 
 
     cout<<"Enter Your Product Data Brooooo     "<<endl;
@@ -22,16 +22,17 @@ int main(){
         cin>>qty[i];
         cout<<"Enter price  :";
         cin>>price[i];
-        total[i]= qty[i]*price[i];
-        if (qty[i]>=40)
+
+        if (qty[i]>=50)
         {
-            discount[i]= 25;
-            
+            discount[i]= 10;
         }
         else{
             discount[i]=0;
+           
         }
-        payment[i]= total[i]- discount[i];
+         total[i]= qty[i]*price[i];
+        payment[i]= total[i]- (discount[i]/100)*total[i];//0 * 1000
     }
   cout<<"View Product List"<<endl;
   cout<<"-----------------------"<<endl;
@@ -42,15 +43,19 @@ int main(){
         <<setw(10)<<"qty"
         <<setw(10)<<"price"
         <<setw(10)<<"total"
+        <<setw(10)<<"Dis"
         <<setw(20)<<"Payment"<<endl;
     for (int i = 0; i < count; i++)
     {
-  cout<<left;
-  cout<<setw(10)
+        cout<<left;
+        cout<<setw(10)
         <<setw(20)<<code[i]
         <<setw(20)<<name[i]
         <<setw(10)<<qty[i]
-        <<setw(10)<<total[i]<<endl;
+        <<setw(10)<<price[i]
+        <<setw(10)<<total[i]
+        <<setw(10)<<discount[i]
+        <<setw(20)<<payment[i]<<endl;
     }
     
 
