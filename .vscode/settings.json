@@ -3,7 +3,8 @@
     "ostream": "cpp",
     "iostream": "cpp",
     "initializer_list": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "iomanip": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
