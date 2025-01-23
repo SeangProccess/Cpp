@@ -47,6 +47,7 @@ int main(){
         <<setw(20)<<"Payment"<<endl;
     for (int i = 0; i < count; i++)
     {
+        
         cout<<left;
         cout<<setw(10)
         <<setw(20)<<code[i]
